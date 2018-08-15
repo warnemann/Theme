@@ -1,23 +1,18 @@
-{
-  "version"               :"1.0.0",
-  "name"                  :"mediashop",
-  "description"           :"CERES-Theme für shop.hawewe.media",
-  "namespace"             :"mediashop",
-  "author"                :"Heinz W. Warnemann",
-  "license"               : "AGPL-3.0",
-  "price"                 : 0.00,
-  "email"                 : "mail@warnemann.com",
-  "phone"                 : "+49 8035 9549490",
-  "keywords"              : ["theme", "Ceres", "template"],
-  "type"                  :"theme",
-  "require"               : ["IO", "Ceres"],
-  "serviceProvider"       :"mediashop\\Providers\\ThemeServiceProvider",
-  "dataProviders"         :
-  [
     {
-      "key":"mediashop\\Containers\\ThemeContainer",
-      "name":"Theme mediashop",
-      "description":"Theme-Container für den mediashop"
-    }
-    ]
+        "name"                  :"Theme",
+        "description"           :"Basic theme plugin",
+        "namespace"             :"Theme",
+        "author"                :"Your name",
+        "keywords"              : ["theme", "Ceres", "template"],
+        "type"                  :"theme",
+        "require"               : [],
+        "serviceProvider"       :"Theme\\Providers\\ThemeServiceProvider",
+        "dataProviders"         :
+        [
+            {
+                "key"           :"Theme\\Containers\\ThemeContainer",
+                "name"          :"Dark background",
+                "description"   :"Change the background colour of the Ceres template"
+            }
+        ]
     }
